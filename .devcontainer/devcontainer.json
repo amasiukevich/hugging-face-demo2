@@ -1,0 +1,8 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+  },
+  "runArgs": [
+    "--publish=7860:7860"
+  ]
+}
