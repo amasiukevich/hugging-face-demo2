@@ -25,7 +25,12 @@ jobs:
         env:
           HF: ${{ secrets.HF }}
         run: git remote add space https://huggingface.co/spaces/amasiukevich/demo2
+      - name: Debug Git configuration
+        run: |
+          git config --list
       - name: Push to hub
         env: 
           HF: ${{ secrets.HF }}
         run: git push --force https://huggingface.co/spaces/amasiukevich/demo2 main
+        
+      
